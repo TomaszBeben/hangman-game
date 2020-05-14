@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: lightgray;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    border: 1px solid white;
+}
+
+.password {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid white;
+}
+
+.gibbet {}
