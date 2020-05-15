@@ -20,4 +20,7 @@ body {
     border: 1px solid white;
 }
 
-.gibbet {}
+.gibbet {
+    width: 770px;
+    height: 660px;
+}
