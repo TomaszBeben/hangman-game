@@ -16,11 +16,37 @@ body {
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 5rem;
     border: 1px solid white;
+    min-height: 60px;
 }
 
 .gibbet {
-    width: 770px;
-    height: 660px;
+    width: 50% auto;
+    min-height: 100px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    min-height: 100px;
+}
+
+.alphabet {
+    float: left;
+    width: 50%;
+    text-align: center;
+    min-height: 100px;
+}
+
+.button {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    float: left;
+    border-radius: 15px;
 }
