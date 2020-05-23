@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .container {
@@ -21,13 +22,18 @@ body {
     min-height: 60px;
 }
 
+.secondRow {
+    display: flex;
+    flex-direction: row;
+}
+
 .gibbet {
     width: 50% auto;
-    min-height: 100px;
+    min-height: 400px;
 }
 
 img {
-    width: 50%;
+    width: 100%;
     height: auto;
     min-height: 100px;
 }
@@ -45,8 +51,14 @@ img {
     text-align: center;
     padding: 5px;
     margin: 5px;
-    border: 1px solid white;
+    border: 1px solid gray;
     cursor: pointer;
     float: left;
     border-radius: 15px;
+    color: gray;
+}
+
+.button:hover {
+    border: 1px solid white;
+    color: white;
 }
