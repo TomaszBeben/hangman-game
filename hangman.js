@@ -83,16 +83,16 @@ function check(num){
     }
     if(clicked == true){
         const element = "letter-" + num;
-        document.querySelector('#element').style.background = "#003300";
-        document.querySelector('#element').style.color = "#00C000";
-        document.querySelector('#element').style.border = "1px solid #00C000";
+        document.getElementById(element).style.background = "#003300";
+        document.getElementById(element).style.color = "#00C000";
+        document.getElementById(element).style.border = "1px solid #00C000";
        
         show();   
     }else{
         const element = "letter-" + num;
-        document.querySelector('#element').style.background = "#330000";
-        document.querySelector('#element').style.color = "#C00000";
-        document.querySelector('#element').style.border = "1px solid #C00000";
+        document.getElementById(element).style.background = "#330000";
+        document.getElementById(element).style.color = "#C00000";
+        document.getElementById(element).style.border = "1px solid #C00000";
         show();
     }
     

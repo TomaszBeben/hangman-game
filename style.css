@@ -45,7 +45,7 @@ img {
     min-height: 100px;
 }
 
-#element {
+.button {
     height: 30px;
     width: 30px;
     text-align: center;
@@ -58,7 +58,7 @@ img {
     color: gray;
 }
 
-#element:hover {
+.button:hover {
     border: 1px solid white;
     color: white;
 }
