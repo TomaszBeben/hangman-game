@@ -1,5 +1,6 @@
 let password = 'bez pracy nie ma kołaczy';
 password = password.toUpperCase();
+let numsOfFailures = 0;
 
 let lines = ""
 let size = password.length;
@@ -93,7 +94,19 @@ function check(num){
         document.getElementById(element).style.background = "#330000";
         document.getElementById(element).style.color = "#C00000";
         document.getElementById(element).style.border = "1px solid #C00000";
+        document.getElementById(element).style.cursor = 'default';
+        document.getElementById(element).setAttribute('onclick',';');
+        numsOfFailures++;
+        const image = 'img/gibbet' + numsOfFailures + '.jpg'
+        document.querySelector('.gibbet').innerHTML = '<img src="'+image+'" alt="">'
         show();
     }
-    
+    if(password == lines){
+        document.querySelector('.alphabet').innerHTML = 'CONGRATULATION!!!' + password + 
+        '<br/></br/><span class="reset" onclick="location.reload()">One more time ??</span>'
+    }
+    if(numsOfFailures>7){
+        document.querySelector('.alphabet').innerHTML = 'LOOSE!!!!' + password +
+        '<br/></br/><span class="reset" onclick="location.reload()">One more time ??</span>'
+    }
 }

@@ -36,6 +36,7 @@ img {
     width: 100%;
     height: auto;
     min-height: 100px;
+    min-width: 200px;
 }
 
 .alphabet {
@@ -61,4 +62,9 @@ img {
 .button:hover {
     border: 1px solid white;
     color: white;
+}
+
+.reset:hover {
+    cursor: pointer;
+    color: green;
 }
